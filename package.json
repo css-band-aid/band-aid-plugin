@@ -1,0 +1,19 @@
+{
+  "name": "band-aid-plugin",
+  "version": "0.0.0",
+  "description": "CSS Band Aid Webpack Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/css-band-aid/band-aid-plugin.git"
+  },
+  "author": "Matthew L Smith <mtscout6@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/css-band-aid/band-aid-plugin/issues"
+  },
+  "homepage": "https://github.com/css-band-aid/band-aid-plugin"
+}
