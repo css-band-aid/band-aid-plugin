@@ -4,7 +4,9 @@
   "description": "CSS Band Aid Webpack Plugin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,22 @@
   "bugs": {
     "url": "https://github.com/css-band-aid/band-aid-plugin/issues"
   },
-  "homepage": "https://github.com/css-band-aid/band-aid-plugin"
+  "homepage": "https://github.com/css-band-aid/band-aid-plugin",
+  "devDependencies": {
+    "babel": "^5.0.9",
+    "babel-eslint": "^2.0.2",
+    "css-loader": "^0.10.1",
+    "eslint": "^0.18.0",
+    "file-loader": "^0.8.1",
+    "less": "^2.5.0",
+    "less-loader": "^2.2.0",
+    "style-loader": "^0.10.1",
+    "webpack": "^1.8.2"
+  },
+  "peerDependencies": {
+    "webpack": "^1.8.2"
+  },
+  "dependencies": {
+    "css-band-aid": "^4.2.0"
+  }
 }
