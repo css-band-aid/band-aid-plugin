@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run build"
+    "test": "mocha && npm run lint",
+    "lint": "eslint ./",
+    "prepublish": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,14 +21,14 @@
   "homepage": "https://github.com/css-band-aid/band-aid-plugin",
   "devDependencies": {
     "babel": "^5.0.9",
-    "babel-eslint": "^2.0.2",
+    "babel-eslint": "^3.0.1",
     "css-loader": "^0.10.1",
-    "eslint": "^0.18.0",
+    "eslint": "^0.19.0",
     "file-loader": "^0.8.1",
     "less": "^2.5.0",
     "less-loader": "^2.2.0",
     "style-loader": "^0.10.1",
-    "webpack": "^1.8.2"
+    "webpack": "^1.8.8"
   },
   "peerDependencies": {
     "webpack": "^1.8.2"
